@@ -1,0 +1,19 @@
+<form method="get">
+
+    <input id="q" name="q" type="text" size="40" placeholder="searching in title,description and author">
+</form>
+
+
+<h3>PyPI packages</h3>
+
+{% for item in packages %}
+<br>
+<br><b>Title: </b> {{item.title}}
+<br><b>link: </b> <a href="url">{{item.link}}</a>
+<br><b>guid: </b> <a href="url">{{item.guid}}</a>
+<br><b>description:</b> {{item.description}}
+<br><b>author:</b> {{item.author}}
+<br><b>publication date:</b> {{item.pubDate}}
+
+{% endfor %}
+
