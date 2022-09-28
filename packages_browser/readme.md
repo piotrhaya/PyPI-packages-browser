@@ -39,7 +39,7 @@ DATABASE_HOST=
 DATABASE_PORT=
 ```
 
-If you don't have any database system simply fill in the data as below::
+If you do not have any database system, simply fill in the data as below:
 
 ```shell 
 DATABASE_ENGINE=django.db.backends.sqlite3
@@ -56,11 +56,11 @@ ES_VERIFY_CERTS='use True if You want to verify certificates or False if not'
 ES_CA_CERTS='directory to Your certificate, if You dont have any leave this option empty'
 ```
 
-It is highly recomended to use certificate verification when connecting to elasticsearch !
+It is highly recomended to use certificate verification You create the connection to elasticsearch!
 
 <h3>Application configuration</h3>
 
-* First step: install require libraries
+* First step: Install require libraries.
 
 ```shell 
 pip install -r requirements.txt
@@ -72,19 +72,19 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
-* Third step: Populate the Elasticsearch index and mapping
+* Third step: Populate the Elasticsearch index and mapping.
 
 ```shell 
 python manage.py search_index --rebuild
 ```
 
-All the data is being stored in the database too, so if You will lose Your elasticsearch index You could rebuild it
+All the data is being stored in the database, in case of loss elasticsearch index You can rebuild it
 again with command above.
 
 User Guide
 ====================================
-When Your application server and elasticsearch are running, You will be able to search in Your data My application
-server is running on http://127.0.0.1:8000
+When Your application server and elasticsearch are running, You will be able to search in Your data.
+Defaultly server is running on http://127.0.0.1:8000
 
 * Main enpoint:
   http://127.0.0.1:8000/drf/es/
@@ -97,6 +97,6 @@ server is running on http://127.0.0.1:8000
 
 <h5>Multisearch browser</h5>
 
-Application has funcionality to search data according to words in the title, description and author at once:
+Application has functionality to search data according to words in the title, description and author at once:
 
 * Search module: http://127.0.0.1:8000/search/
