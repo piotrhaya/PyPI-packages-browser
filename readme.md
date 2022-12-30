@@ -86,7 +86,7 @@ User Guide
 When Your application server and elasticsearch are running, You will be able to search in Your data.
 Defaultly server is running on http://127.0.0.1:8000
 
-* Main enpoint:
+* Main endpoint:
   http://127.0.0.1:8000/drf/es/
 
 * Search by terms in the title: http://127.0.0.1:8000/drf/es/?search=title:search_term
